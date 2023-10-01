@@ -3,4 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  get '*not_found' => 'application#routing_error'
+  post '*not_found' => 'application#routing_error'
 end
